@@ -1,0 +1,75 @@
+tap_install:
+  values:
+    grype:
+      namespace: workloads
+      targetImagePullSecret: registry-credentials
+
+    contour:
+      envoy:
+        service:
+          type: NodePort
+      hostPorts:
+        enabled: true
+
+    profile: full
+    ceip_policy_disclosed: true # Installation fails if this is set to 'false'
+
+    cnrs:
+      provider: local
+      domain_name: myhome.com
+      domain_template: "{{.Name}}.{{.Domain}}"
+
+    buildservice:
+      kp_default_repository: "reg.perfect300rock.com/tapdev/build-service"
+
+    supply_chain: basic
+
+
+    shared:
+      ingress_domain: myhome.com
+
+      image_registry:
+        project_path: "reg.perfect300rock.com/tapdev"
+
+    ootb_supply_chain_basic:
+      registry:
+        server: "reg.perfect300rock.com"
+        repository: "tapdev/supply-chain"
+      gitops:
+        ssh_secret: ""
+
+    tap_gui:
+      service_type: ClusterIP
+      ingressEnabled: "true"
+      ingressDomain: "myhome.com"
+      app_config:
+        app:
+          baseUrl: http://tap-gui.myhome.com
+        catalog:
+          locations:
+            - type: url
+              target: https://github.com/gm2552/tap-blank-catalog/blob/main/catalog-info.yaml
+            - type: url
+              target: https://github.com/gm2552/yelb-catalog/blob/main/catalog-info.yaml
+        backend:
+          baseUrl: http://tap-gui.myhome.com
+          cors:
+            origin: http://tap-gui.myhome.com
+          reading:
+            allow:
+              - host: '*.myhome.com'
+              - host: '*.perfect300rock.com'
+
+    metadata_store:
+      ns_for_export_app_cert: "*"
+      app_service_type: ClusterIP
+
+    scanning:
+      metadataStore:
+        url: ""
+
+    excluded_packages:
+      - workshops.learningcenter.tanzu.vmware.com
+      - snyk.scanning.apps.tanzu.vmware.com
+      - prometheus.community.tanzu.vmware.com
+      - learningcenter.tanzu.vmware.com
