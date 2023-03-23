@@ -1,0 +1,7 @@
+---
+git:
+  url: https://github.com/gm2552/tap-gitops-installer.git
+  ref: origin/main
+  sub_path: clusters/tap-tkg-homelab/cluster-config
+tap_package_repository:
+  oci_repository: reg.perfect300rock.com/tanzu-application-platform/tap-packages
