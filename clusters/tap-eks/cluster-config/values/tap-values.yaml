@@ -101,7 +101,7 @@ tap_install:
         integrations:
           github:
             - host: github.com
-              token: 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               
+              token: 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               
         proxy:
           /metadata-store:
             target: https://metadata-store.perfect300rock.com/api/v1
