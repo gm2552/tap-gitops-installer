@@ -98,10 +98,10 @@ tap_install:
               development:
                 clientId: 0614c6009639e1bc534c
                 clientSecret: db7fbcc1b5cf43941ea42abb365387ad89617344
-        integrations:
-          github:
-            - host: github.com
-              token: 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               
+#        integrations:
+#          github:
+#            - host: github.com
+#              token: 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               
         proxy:
           /metadata-store:
             target: https://metadata-store.perfect300rock.com/api/v1
