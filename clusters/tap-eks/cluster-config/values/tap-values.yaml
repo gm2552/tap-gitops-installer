@@ -1,7 +1,7 @@
 tap_install:
   values:
 
-    sso:
+    appsso:
       default_workload_domain_template: "{{.Name}}.{{.Domain}}"
 
     contour:
