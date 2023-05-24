@@ -3,7 +3,6 @@ tap_install:
 
     appsso:
       default_workload_domain_template: "{{.Name}}.{{.Domain}}"
-      domain_template: "{{.Name}}.{{.Domain}}"
       
     contour:
       envoy:
