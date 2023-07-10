@@ -142,6 +142,7 @@ tap_install:
     learningcenter:
       ingressSecret: 
         secretName: learning-center-cert
+      ingressClass:  contour
     
     excluded_packages:
       - snyk.scanning.apps.tanzu.vmware.com
