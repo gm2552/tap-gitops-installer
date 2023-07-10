@@ -138,6 +138,10 @@ tap_install:
       caSecret:
         name: app-tls-cert
         importFromNamespace: metadata-store
+
+    learningcenter:
+      ingressSecret: 
+        secretName: learning-center-cert
     
     excluded_packages:
       - snyk.scanning.apps.tanzu.vmware.com
