@@ -140,7 +140,6 @@ tap_install:
         importFromNamespace: metadata-store
     
     excluded_packages:
-      - workshops.learningcenter.tanzu.vmware.com
       - snyk.scanning.apps.tanzu.vmware.com
       - prometheus.community.tanzu.vmware.com
 
