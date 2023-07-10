@@ -143,5 +143,4 @@ tap_install:
       - workshops.learningcenter.tanzu.vmware.com
       - snyk.scanning.apps.tanzu.vmware.com
       - prometheus.community.tanzu.vmware.com
-      - learningcenter.tanzu.vmware.com
 
