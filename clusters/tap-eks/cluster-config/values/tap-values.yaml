@@ -139,12 +139,14 @@ tap_install:
         name: app-tls-cert
         importFromNamespace: metadata-store
 
-    learningcenter:
-      ingressSecret: 
-        secretName: learning-center-cert
+#    learningcenter:
+#      ingressSecret: 
+#        secretName: learning-center-cert
 #      ingressClass:  contour
     
     excluded_packages:
       - snyk.scanning.apps.tanzu.vmware.com
       - prometheus.community.tanzu.vmware.com
+      - learningcenter.tanzu.vmware.com
+      - workshops.learningcenter.tanzu.vmware.com
 
