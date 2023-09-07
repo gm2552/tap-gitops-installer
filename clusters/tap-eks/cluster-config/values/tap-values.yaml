@@ -1,6 +1,13 @@
 tap_install:
   values:
 
+    api_auto_registration:
+      tap_gui_url: https://tap-gui.perfect300rock.com
+      route_provider:
+        spring_cloud_gateway:
+          enabled: true
+          scg_openapi_service_url: "http://scg-openapi-service.spring-cloud-gateway.svc.cluster.local" # default value
+          
     local_source_proxy:
       repository: reg.perfect300rock.com/tapdev/lsp-source
       push_secret:
