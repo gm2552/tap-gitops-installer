@@ -2,7 +2,6 @@ tap_install:
   values:
 
     api_auto_registration:
-      tap_gui_url: https://tap-gui.perfect300rock.com
       route_provider:
         spring_cloud_gateway:
           enabled: true
