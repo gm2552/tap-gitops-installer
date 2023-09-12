@@ -54,17 +54,17 @@ tap_install:
       kp_default_repository: "reg.perfect300rock.com/tapdev/build-service"
       #exclude_dependencies: true
     
-    supply_chain: testing
+    #supply_chain: testing
     #supply_chain: testing_scanning
-    #supply_chain: basic
+    supply_chain: basic
     
     shared:
       ingress_domain: perfect300rock.com
       ingress_issuer: letsencrypt-prod
     
-    ootb_supply_chain_testing:
+    #ootb_supply_chain_testing:
     #ootb_supply_chain_testing_scanning:
-    #ootb_supply_chain_basic:
+    ootb_supply_chain_basic:
       registry:
         server: "reg.perfect300rock.com"
         repository: "tapdev/supply-chain"
