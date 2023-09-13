@@ -2,6 +2,7 @@ tap_install:
   values:
 
     api_auto_registration:
+      auto_generate_cert: false
       route_provider:
         spring_cloud_gateway:
           enabled: true
