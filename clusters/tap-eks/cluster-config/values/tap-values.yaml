@@ -6,7 +6,6 @@ tap_install:
         sourceUrls: https://api-auto-registration.perfect300rock.com/openapi
 
     api_auto_registration:
-      ingress_domain: perfect300rock.com
       tap_gui_url: https://tap-gui.perfect300rock.com/
       route_provider:
         spring_cloud_gateway:
