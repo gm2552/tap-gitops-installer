@@ -53,7 +53,7 @@ tap_install:
       tls:
         secret_name: accelerator-cert
         namespace: accelerator-system
-      operation_mode: backstage
+      operation_mode: kubernetes
     
     buildservice:
       kp_default_repository: "reg.perfect300rock.com/tapdev/build-service"
