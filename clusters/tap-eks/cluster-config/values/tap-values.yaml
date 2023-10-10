@@ -100,10 +100,10 @@ tap_install:
       app_config:
         app:
           baseUrl: https://tap-gui.perfect300rock.com
-        catalog:
-          locations:
-            - type: url
-              target: https://github.com/gm2552/tap-blank-catalog/blob/main/catalog-info.yaml
+#        catalog:
+#          locations:
+#            - type: url
+#              target: https://github.com/gm2552/tap-blank-catalog/blob/main/catalog-info.yaml
             # Or use a custom file format and location
             #- type: github-discovery
             #  target: https://github.com/gm2552/*/blob/-/catalog/catalog-info.yaml
