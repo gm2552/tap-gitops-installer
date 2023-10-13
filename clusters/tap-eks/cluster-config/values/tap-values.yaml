@@ -139,7 +139,7 @@ tap_install:
       ns_for_export_app_cert: "*"
       app_service_type: ClusterIP
 #      ingress_domain: "perfect300rock.com"
-#      ingress_enabled: "true"
+      ingress_enabled: "fasle"
     
 #    scanning:
 #      metadataStore:
