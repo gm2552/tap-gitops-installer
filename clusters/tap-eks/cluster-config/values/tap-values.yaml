@@ -6,7 +6,7 @@ tap_install:
         sourceUrls: https://api-auto-registration.perfect300rock.com/openapi
 
     api_auto_registration:
-      tap_gui_url: https://tap-gui.perfect300rock.com/
+      tap_gui_url: https://tap-gui.perfect300rock.com
       route_provider:
         spring_cloud_gateway:
           scg_openapi_service_url: http://scg-openapi-service.spring-cloud-gateway.svc.cluster.local
