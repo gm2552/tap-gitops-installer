@@ -2,5 +2,5 @@ tap_install:
   package_repository:
     oci_repository: reg.perfect300rock.com/tanzu-application-platform/tap-packages
   version:
-    package_repo_bundle_tag: "1.8.0-build.59"
-    package_version: "1.8.0-build.59"    
+    package_repo_bundle_tag: "1.8.0-build.60"
+    package_version: "1.8.0-build.60"    
