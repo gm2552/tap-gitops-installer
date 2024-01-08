@@ -1,6 +1,9 @@
 tap_install:
   values:
 
+    crossplane:
+      orphan_resources: false
+
     api_portal:
       apiPortalServer:
         sourceUrls: https://api-auto-registration.perfect300rock.com/openapi
